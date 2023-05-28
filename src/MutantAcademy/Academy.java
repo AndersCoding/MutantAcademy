@@ -10,11 +10,12 @@ public class Academy {
 
 
     //Method that welcomes the user
-    public static void welcomeUser(){
+    public static void welcomeUser() throws InterruptedException {
         System.out.println("Welcome to MutantAcademy. You have taken the role as the headmaster. Please type inn your name:");
         String userName = sc.nextLine();
         System.out.println("Hello " + userName + ". The first student will arrive soon. You have " + availableRooms +" available rooms.");
         System.out.println("* The bus arrives at the academy and the first student is: *");
+        Thread.sleep(2000);
         studentArrives();
     }
 
@@ -46,7 +47,7 @@ public class Academy {
                 break;
             case 3:
                 Database.expellStudents();
-                System.out.println("You expelled the students and have " + availableRooms + " available rooms");
+                System.out.println("You expelled the students and have 20 available rooms");
                 break;
             case 4:
                 System.out.println("You have left the school. Thank you for your service. These are the students at the school:");

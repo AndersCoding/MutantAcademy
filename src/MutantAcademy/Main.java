@@ -3,7 +3,7 @@ package MutantAcademy;
 import java.sql.SQLException;
 
 public class Main {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, InterruptedException {
         Academy.welcomeUser();
         /*
         [x] - fortsette med fields på student-class
