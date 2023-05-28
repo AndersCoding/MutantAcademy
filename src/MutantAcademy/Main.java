@@ -7,8 +7,8 @@ public class Main {
         Academy.welcomeUser();
         /*
         [x] - fortsette med fields på student-class
-        [] - lage en metode som sletter alle elevene fra databasen. Gjøres via database-klassen og sqlQuery
-        [] - Finne ut hvordan du kan oppdatere hvor mange sengeplasser det er til ethvert tidspunkr. Academy.roomsAvailable
+        [x] - lage en metode som sletter alle elevene fra databasen. Gjøres via database-klassen og sqlQuery
+        [] - Finne ut hvordan du kan oppdatere hvor mange sengeplasser det er til ethvert tidspunkt. Academy.roomsAvailable
         */
     }
 }
