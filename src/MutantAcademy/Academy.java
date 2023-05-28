@@ -53,22 +53,5 @@ public class Academy {
                 System.out.println("You have left the school. Thank you for your service. These are the students at the school:");
                 Database.showStudents();
         }
-       /*
-        if (userAnswer.equals("Y")){
-            Database.addStudents(firstname +" "+ lastname,power,powerlvl);
-            availableRooms = availableRooms - 1;
-            System.out.println("The student was added to the database. You have " + availableRooms + " available rooms left.");
-            System.out.println("Would you like to greet another possible student? Y/N");
-            String possStud = sc.next();
-            if(possStud.equals("Y")){
-                studentArrives();
-            }
-        } else {
-            System.out.println("It was not added");
-            System.out.println("Would you like to greet another possible student? Y/N");
-            String possStud = sc.next();
-            if(possStud.equals("Y")){
-                studentArrives();
-            } */
         }
 }
