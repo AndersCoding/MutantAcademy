@@ -55,5 +55,20 @@ public class Database {
         }
     }
 
-    //Method that
+    //Method that shows number of students in COUNT - WORKS
+    public static void showNumberOfStudents(){
+        try{
+            String sqlQuery = "SELECT COUNT(Name) AS totalStudents FROM Students";
+            Connection connection = ConnectDB();
+            PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()){
+                String totalStudents = resultSet.getString("totalStudents");
+                System.out.println("Total number of students currently at the academy: " + totalStudents);
+                System.out.println("* The next student *");
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
 }

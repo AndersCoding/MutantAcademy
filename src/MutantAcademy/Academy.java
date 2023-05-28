@@ -30,7 +30,7 @@ public class Academy {
         System.out.println("Studentname: " + firstname + " " + lastname
                 + "\nAbility: " + power + "\nPowerlvl: " + powerlvl);
         System.out.println("-------------------------");
-        System.out.println("1. Accept student \n2. Decline student and review a new student \n3. Expell all students \n4. Exit");
+        System.out.println("1. Accept student \n2. Decline student and review a new student \n3. Show number of students in academy \n4. Expell all students \n5. Exit");
         int userAnswer = sc.nextInt();
         switch (userAnswer){
             case 1:
@@ -46,10 +46,15 @@ public class Academy {
                 studentArrives();
                 break;
             case 3:
+                Database.showNumberOfStudents();
+                System.out.println();
+                studentArrives();
+                break;
+            case 4:
                 Database.expellStudents();
                 System.out.println("You expelled the students and have 20 available rooms");
                 break;
-            case 4:
+            case 5:
                 System.out.println("You have left the school. Thank you for your service. These are the students at the school:");
                 Database.showStudents();
         }
